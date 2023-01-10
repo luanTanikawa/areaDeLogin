@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="template.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+	<div class="box">
+		<label>
+			<div class="campo-text">
+				<div>Usuário</div>
+			</div>	 
+			<input type="text" name="user" data-rule="required" class="campo">	
+		</label>
+
+		<label>
+			<div class="campo-text">
+				<div>Senha</div>
+			</div>	
+			<input type="password" name="password" data-rule="required" class="campo">
+		</label>
+
+		<button class="botao" onclick="clicou()">Entrar</button>
+		<div class="link-area">
+			<div class="link" onclick="esqueciSenha ()">Esqueci a senha</div>
+			<a href="" class="link">Não tenho cadastro</a>
+		</div>
+		<div class="box-senha">
+			<div class="text-senha">Enviaremos uma senha provisória para o email cadastrado na sua conta</div>
+			<label for="">
+				<div class="campo-text">
+					<div>Email cadastrado</div>
+				</div>
+				<input type="email" name="email" class="campo">
+			</label>
+			<input type="submit" name="" class="botao" onclick="enviarSenha()" value="Enviar">
+		</div>
+	</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
